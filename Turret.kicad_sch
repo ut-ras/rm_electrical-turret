@@ -1748,6 +1748,18 @@
 		)
 		(uuid "12c12d8d-09d9-4d89-900a-16c2f6f46363")
 	)
+	(text "Todo:\nSwap UART connection just as was done on chassis board.\nShould now be a SPI connection\nMAKE SURE PIN NUMBERS MATCH ACROSS CHASSIS AND TURRET BOARDS"
+		(exclude_from_sim no)
+		(at 57.912 112.014 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(color 194 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "20d21cc3-b3f2-46d8-9793-2e870766ff3c")
+	)
 	(text "Ref System"
 		(exclude_from_sim no)
 		(at 133.35 20.32 0)
