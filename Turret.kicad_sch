@@ -1606,6 +1606,18 @@
 		)
 	)
 	(rectangle
+		(start 72.39 101.6)
+		(end 130.81 124.46)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 24e77248-bda5-4324-8537-8f783f27ecf4)
+	)
+	(rectangle
 		(start 132.08 17.78)
 		(end 181.61 44.45)
 		(stroke
@@ -1750,7 +1762,7 @@
 	)
 	(text "Todo:\nSwap UART connection just as was done on chassis board.\nShould now be a SPI connection\nMAKE SURE PIN NUMBERS MATCH ACROSS CHASSIS AND TURRET BOARDS"
 		(exclude_from_sim no)
-		(at 57.912 112.014 0)
+		(at 37.338 149.098 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -1859,6 +1871,17 @@
 			(justify left)
 		)
 		(uuid "7da03c1e-7075-45db-838b-c30f3e199aa7")
+	)
+	(text "UV LED"
+		(exclude_from_sim no)
+		(at 73.406 104.902 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f4390fb-6aac-4e74-8b37-22e1fe2e7c80")
 	)
 	(text "Ref Output\n"
 		(exclude_from_sim no)
@@ -1989,6 +2012,12 @@
 		(uuid "76d64afd-86bc-457c-a78e-6c0fd4776706")
 	)
 	(junction
+		(at 99.06 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c9360ac-86c4-4fe9-9b4e-b8f599d99677")
+	)
+	(junction
 		(at 154.94 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2029,6 +2058,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b73ed255-3f9b-4cb3-83b0-a2e2de1d0c72")
+	)
+	(junction
+		(at 99.06 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d15f1e4b-6cbd-4fcb-824f-c4e9cd93f370")
 	)
 	(junction
 		(at 99.06 26.67)
@@ -2145,6 +2180,16 @@
 			(type default)
 		)
 		(uuid "040e1f53-b2b1-4dce-97c3-2de22f6362f9")
+	)
+	(wire
+		(pts
+			(xy 99.06 113.03) (xy 104.14 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04f3f0e1-bb67-4ae0-87a5-1360a8fdd4ab")
 	)
 	(wire
 		(pts
@@ -2468,6 +2513,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 113.03) (xy 99.06 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e6143bf-3a9e-416d-9503-b9f5a6c93009")
+	)
+	(wire
+		(pts
 			(xy 254 92.71) (xy 241.3 92.71)
 		)
 		(stroke
@@ -2545,6 +2600,16 @@
 			(type default)
 		)
 		(uuid "66255a32-549c-4720-8f75-6c2fddb36d55")
+	)
+	(wire
+		(pts
+			(xy 96.52 115.57) (xy 99.06 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a6cf57e-0aed-430b-b7dd-61fc563fc385")
 	)
 	(wire
 		(pts
@@ -2998,6 +3063,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 115.57) (xy 104.14 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e67d0936-8394-475d-aa95-9cd7c05d0906")
+	)
+	(wire
+		(pts
 			(xy 210.82 41.91) (xy 210.82 44.45)
 		)
 		(stroke
@@ -3417,6 +3492,16 @@
 		(uuid "8ba53af4-ed6b-4a3d-ad3c-b477068150b3")
 	)
 	(label "Shooter_{GND}"
+		(at 96.52 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8fbace77-a08b-460b-ae60-ea955ffbac8c")
+	)
+	(label "Shooter_{GND}"
 		(at 96.52 85.09 180)
 		(effects
 			(font
@@ -3575,6 +3660,16 @@
 			(justify right bottom)
 		)
 		(uuid "cfb2c963-e562-4143-abcc-e4e0d73d657e")
+	)
+	(label "Shooter_{+24V}"
+		(at 96.52 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cffa8911-baa2-42d8-bd73-b69b49103f1a")
 	)
 	(label "UART_{3V3}"
 		(at 27.94 69.85 180)
@@ -3780,6 +3875,17 @@
 			(justify left)
 		)
 		(uuid "1ac0bf4a-778a-405b-86b2-7735132c1e15")
+	)
+	(hierarchical_label "UV_LED PWR_{GND}"
+		(shape output)
+		(at 104.14 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1cdf67eb-0e9d-4f29-9acc-07055f370949")
 	)
 	(hierarchical_label "VTM Ref_{CAN}+"
 		(shape output)
@@ -4275,6 +4381,17 @@
 			(justify right)
 		)
 		(uuid "ed00dc19-d5da-49f3-9849-e02317dfc548")
+	)
+	(hierarchical_label "UV_LED PWR_{+24V}"
+		(shape output)
+		(at 104.14 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef0fed9e-b925-41e8-8c75-275ab45016e9")
 	)
 	(hierarchical_label "Orin UART_{GND}"
 		(shape output)
@@ -6069,6 +6186,87 @@
 			(project "Turret"
 				(path "/84905b3c-2997-4e61-b373-c0062fb72371"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 104.14 115.57 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6a15541-1ce2-41da-b406-25c5174841ab")
+		(property "Reference" "+24V_Waterwheel2"
+			(at 102.87 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 102.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
+			(at 104.14 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 104.14 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "XT30"
+			(at 104.14 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ec22e74-dbb1-490e-937b-e8c6ad834254")
+		)
+		(pin "2"
+			(uuid "77684da2-ca9d-482c-bc40-92c7eeecec36")
+		)
+		(instances
+			(project "Turret"
+				(path "/84905b3c-2997-4e61-b373-c0062fb72371"
+					(reference "+24V_Waterwheel2")
 					(unit 1)
 				)
 			)
